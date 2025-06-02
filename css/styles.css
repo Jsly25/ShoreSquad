@@ -210,72 +210,76 @@ h2 {
 /* Weather Widget */
 .weather-widget {
     background: var(--white);
-    margin: 0 auto;
-    max-width: 600px;
 }
 
 .weather-content {
-    text-align: center;
+    padding: 1rem;
 }
 
-.weather-main {
-    margin-bottom: 1.5rem;
-}
-
-.temperature {
+.current-temp {
     font-size: 3rem;
     font-weight: bold;
     color: var(--primary);
-    margin-bottom: 0.5rem;
 }
 
-.weather-description {
-    font-size: 1.2rem;
-    color: var(--text);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
+.weather-card {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    height: 100%;
 }
 
-.weather-icon {
-    width: 50px;
-    height: 50px;
-    display: inline-block !important;
-    vertical-align: middle;
-}
-
-.weather-details {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+.weather-card i {
+    font-size: 2rem;
+    color: var(--primary);
     margin-bottom: 1rem;
 }
 
-.humidity, .wind {
-    font-size: 1.1rem;
+.forecast-card {
+    background: var(--white);
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.2s;
 }
 
-.location {
+.forecast-card:hover {
+    transform: translateY(-5px);
+}
+
+.forecast-card .card-title {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.weather-icon i {
+    font-size: 2.5rem;
+}
+
+.forecast-temp {
+    font-size: 1.2rem;
+}
+
+.forecast-temp .high {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.forecast-temp .low {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+}
+
+.forecast-desc {
     color: var(--text);
     margin-bottom: 0.5rem;
 }
 
-.last-updated {
-    font-size: 0.9rem;
-    color: #666;
-}
-
-.weather-details i {
+.weather-section h2,
+.forecast-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
     color: var(--primary);
-    margin-right: 0.5rem;
-}
-
-.temp-range,
-.small {
-    font-size: 0.9rem;
-    color: #666;
-    margin-left: 0.5rem;
 }
 
 /* Map Container */
@@ -412,6 +416,34 @@ h2 {
     width: 3rem;
     height: 3rem;
     color: var(--primary);
+}
+
+/* Forecast Section */
+.forecast-section {
+    padding: 4rem 2rem;
+    background-color: var(--light-gray);
+    text-align: center;
+}
+
+.forecast-section h2 {
+    margin-bottom: 2rem;
+    color: var(--primary);
+}
+
+#forecast-container .card {
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+#forecast-container .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text);
+}
+
+#forecast-container .card-text {
+    font-size: 0.9rem;
+    color: #666;
 }
 
 @media (max-width: 768px) {
