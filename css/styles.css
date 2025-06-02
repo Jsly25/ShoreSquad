@@ -122,13 +122,160 @@ h2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
+    margin-top: 2rem;
+}
+
+.event-card {
+    background: var(--white);
+    border-radius: 22px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid var(--success);
+}
+
+.event-date {
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.event-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.event-location {
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.event-time {
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.squad-members {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.member-avatars {
+    display: flex;
+    margin-right: 1rem;
+}
+
+.member-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: -10px;
+    background: var(--primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+
+.member-count {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.join-squad-btn {
+    width: 100%;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.join-squad-btn:hover {
+    background-color: #1557b0;
 }
 
 /* Weather Widget */
 .weather-widget {
-    background: var(--light-gray);
-    border-radius: 10px;
-    padding: 2rem;
+    background: var(--white);
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.weather-content {
+    text-align: center;
+}
+
+.weather-main {
+    margin-bottom: 1.5rem;
+}
+
+.temperature {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.weather-description {
+    font-size: 1.2rem;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.weather-icon {
+    width: 50px;
+    height: 50px;
+    display: inline-block !important;
+    vertical-align: middle;
+}
+
+.weather-details {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.humidity, .wind {
+    font-size: 1.1rem;
+}
+
+.location {
+    color: var(--text);
+    margin-bottom: 0.5rem;
+}
+
+.last-updated {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.weather-details i {
+    color: var(--primary);
+    margin-right: 0.5rem;
+}
+
+.temp-range,
+.small {
+    font-size: 0.9rem;
+    color: #666;
+    margin-left: 0.5rem;
 }
 
 /* Map Container */
@@ -211,6 +358,60 @@ h2 {
 .map-info i {
     color: var(--secondary);
     margin-right: 0.5rem;
+}
+
+.mb-4 {
+    margin-bottom: 2.5rem;
+}
+
+.mb-3 {
+    margin-bottom: 1rem;
+}
+
+.card {
+    background: var(--white);
+}
+
+.shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+}
+
+.card-body {
+    position: relative;
+}
+
+.p-4 {
+    padding: 1.5rem;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+/* Ensure map container is responsive */
+#map-section iframe {
+    transition: all 0.3s ease;
+}
+
+#map-section iframe:hover {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.error-message {
+    text-align: center;
+    color: #dc3545;
+    padding: 2rem;
+}
+
+.error-message i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+    color: var(--primary);
 }
 
 @media (max-width: 768px) {
