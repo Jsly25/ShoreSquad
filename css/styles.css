@@ -179,7 +179,40 @@ h2 {
     border-top: 1px solid rgba(255,255,255,0.1);
 }
 
-/* Responsive Design */
+/* Map Section Styles */
+.map-section {
+    background: var(--light-gray);
+    padding: 4rem 2rem;
+}
+
+#map-container {
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.map-info {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.map-info p {
+    margin: 0.5rem 0;
+    color: var(--text);
+    font-size: 1.1rem;
+}
+
+.map-info i {
+    color: var(--secondary);
+    margin-right: 0.5rem;
+}
+
 @media (max-width: 768px) {
     .nav-menu {
         display: none; /* We'll implement a mobile menu with JavaScript */
@@ -191,5 +224,13 @@ h2 {
     
     section {
         padding: 3rem 1rem;
+    }
+    
+    #map-container iframe {
+        height: 350px;
+    }
+    
+    .map-info {
+        margin: 1rem;
     }
 }
